@@ -184,6 +184,16 @@ const routes = [
     path: '/5_playground/ClassAndStyle',
     name: 'ClassAndStyle',
     component: () => import(/* webpackChunkName: "5_playground", webpackPrefetch:true */ '../views/5_playground/ClassAndStyle.vue')
+  },
+  {
+    path: '/6_composition/RefsStudy',
+    name: 'RefsStudy',
+    component: () => import(/* webpackChunkName: "5_playground", webpackPrefetch:true */ '../views/6_composition/RefsStudy.vue')
+  },
+  {
+    path: '/6_composition/RefOrReactive',
+    name: 'RefOrReactive',
+    component: () => import(/* webpackChunkName: "5_playground", webpackPrefetch:true */ '../views/6_composition/RefOrReactive.vue')
   }
 ]
 
