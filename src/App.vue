@@ -8,17 +8,17 @@
   <div class="catogory">
     <button :class="{ active: examGb == 'data' }" @click="showExam('data')">DataBinding</button>
     <button :class="{ active: examGb == 'event' }" @click="showExam('event')">Event</button>
-    <button :class="{ active: examGb == 'binding' }" @click="showExam('binding')">렌더링&바인딩</button>
+    <button :class="{ active: examGb == 'binding' }" @click="showExam('binding')">Tutorial</button>
     <button :class="{ active: examGb == 'exam' }" @click="showExam('exam')">간단한예제</button>
-    <button :class="{ active: examGb == 'ref' }" @click="showExam('ref')">ref</button>
+    <button :class="{ active: examGb == 'ref' }" @click="showExam('ref')">Composition</button>
   </div>
   <nav v-if="examGb == 'data'">
-    <router-link to="/databinding/string">DatabindingString</router-link> | <router-link to="/databinding/html">DatabindingHtml</router-link> |
-    <router-link to="/databinding/input">DatabindingInput</router-link> | <router-link to="/databinding/select">DatabindingSelect</router-link> |
-    <router-link to="/databinding/check">DatabindingCheck</router-link> | <router-link to="/databinding/radio">DatabindingRadio</router-link> |
-    <router-link to="/databinding/attr">DatabindingAttr</router-link> | <router-link to="/databinding/list">DataBindingListView</router-link> |
-    <router-link to="/databinding/class">DataBindingClassView</router-link> |
-    <router-link to="/databinding/style">DataBindingStyleView</router-link>
+    <router-link to="/databinding/string">String</router-link> | <router-link to="/databinding/html">Html</router-link> |
+    <router-link to="/databinding/input">Input</router-link> | <router-link to="/databinding/select">Select</router-link> |
+    <router-link to="/databinding/check">Check</router-link> | <router-link to="/databinding/radio">Radio</router-link> |
+    <router-link to="/databinding/attr">Attr</router-link> | <router-link to="/databinding/list">ListView</router-link> |
+    <router-link to="/databinding/class">ClassView</router-link> |
+    <router-link to="/databinding/style">StyleView</router-link>
   </nav>
   <nav v-if="examGb == 'event'">
     <router-link to="/event/click">EventClickView</router-link> | <router-link to="/event/change">EventChangeView</router-link> |
@@ -47,7 +47,8 @@
   </nav>
   <nav v-if="examGb == 'ref'">
     <router-link to="/6_composition/RefsStudy">ref 관하여</router-link> |
-    <router-link to="/6_composition/RefOrReactive">Refs vs Reactive</router-link>
+    <router-link to="/6_composition/RefOrReactive">Refs vs Reactive</router-link> |
+    <router-link to="/6_composition/ComputedStudy">Computed</router-link>
   </nav>
   <router-view />
 </template>

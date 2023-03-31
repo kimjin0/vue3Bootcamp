@@ -194,6 +194,11 @@ const routes = [
     path: '/6_composition/RefOrReactive',
     name: 'RefOrReactive',
     component: () => import(/* webpackChunkName: "5_playground", webpackPrefetch:true */ '../views/6_composition/RefOrReactive.vue')
+  },
+  {
+    path: '/6_composition/ComputedStudy',
+    name: 'ComputedStudy',
+    component: () => import(/* webpackChunkName: "5_playground", webpackPrefetch:true */ '../views/6_composition/ComputedStudy.vue')
   }
 ]
 
