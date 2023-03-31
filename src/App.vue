@@ -49,7 +49,8 @@
     <router-link to="/6_composition/RefsStudy">ref 관하여</router-link> |
     <router-link to="/6_composition/RefOrReactive">Refs vs Reactive</router-link> |
     <router-link to="/6_composition/ComputedStudy">Computed</router-link> |
-    <router-link to="/6_composition/WatchEffect">Watch & WatchEffect</router-link>
+    <router-link to="/6_composition/WatchEffect">Watch & WatchEffect</router-link> |
+    <router-link to="/6_composition/PropsStudy">Props</router-link>
   </nav>
   <router-view />
 </template>

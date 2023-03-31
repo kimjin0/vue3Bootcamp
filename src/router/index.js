@@ -204,6 +204,11 @@ const routes = [
     path: '/6_composition/WatchEffect',
     name: 'WatchEffect',
     component: () => import(/* webpackChunkName: "5_playground", webpackPrefetch:true */ '../views/6_composition/WatchEffect.vue')
+  },
+  {
+    path: '/6_composition/PropsStudy',
+    name: 'PropsStudy',
+    component: () => import(/* webpackChunkName: "5_playground", webpackPrefetch:true */ '../views/6_composition/PropsStudy.vue')
   }
 ]
 
