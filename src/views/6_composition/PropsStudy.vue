@@ -9,15 +9,19 @@
 
 <script>
 import PostList from '@/components/composition/PostList.vue'
+import getPosts from '@/composables/getPosts'
 import { ref } from 'vue'
 export default {
   home: 'HomeView',
   components: { PostList },
   setup() {
-    const posts = ref([
-      { title: 'welcome to vue3', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod!', id: 1 },
-      { title: 'top 5 css tips', body: 'lorem ipsum', id: 2 }
-    ])
+    // const posts = ref([
+    //   { title: 'welcome to vue3', body: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod!', id: 1 },
+    //   { title: 'top 5 css tips', body: 'lorem ipsum', id: 2 }
+    // ])
+    const { posts, load } = getPosts()
+    load()
+
     const showPosts = ref(true)
 
     return { posts, showPosts }
