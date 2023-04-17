@@ -39,5 +39,7 @@ export default {
   height: 300px;
   background-color: #f1f1f1;
   margin: 20px 0;
+  text-align: center;
+  line-height: 300px;
 }
 </style>
